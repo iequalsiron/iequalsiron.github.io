@@ -1,0 +1,272 @@
+/* GLOBAL DECLARIATION + VARIABLE */
+
+* {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    line-height: 1.2;
+}
+
+:root {
+    /* COLORS */
+    --bg-col: #E6E6E6;
+    --blue: rgb(0, 0, 255);
+    --black: black;
+    background-color: var(--bg-col);
+    /* FONT */
+    font-family: sans-serif;
+    font-weight: inherit;
+    font-size: 1em;
+    /* body */
+    --f-body: 1em;
+    /* titles */
+    /* --f-bio: 1em; */
+    --f-icon: 1.9em;
+    --f-cap: .85em;
+    /* MARGINS */
+    --body-mar: 8px;
+    --img-mar: 0px;
+    --header-mar: 4px;
+    --header-mar-top: 16px;
+    --footer-mar-top: 10px;
+    --footer-p-top: 12px;
+    --cap-mar: 0px;
+    --cap-mar-bottom: 16px;
+    --p-mar: 12px;
+    /* INDENT */
+    --s1-ind: -9px;
+    --s1ind: 9px;
+    --refind: 14px;
+    --ref-ind: -14px;
+    --imcind: 29px;
+    --imc-ind: -29px;
+}
+
+
+/* TEXTS STYLES  */
+
+.p-title {
+    font-size: var( --f-body);
+    font-weight: inherit;
+    /* background-color: var(--bg-col); */
+}
+
+.p-title:hover {
+    font-size: var( --f-body);
+    font-weight: inherit;
+    font-style: italic;
+}
+
+.p-title-small {
+    font-size: var(--f-body);
+    font-weight: inherit;
+    font-style: italic;
+}
+
+.nav {
+    color: var(--blue);
+    font-size: var(--f-body);
+    line-height: 0.5;
+}
+
+a {
+    color: var(--blue);
+    text-decoration: none;
+}
+
+.hyperlink {
+    color: var(--blue);
+    text-decoration: underline;
+}
+
+.hyperlink::before {
+    content: "→";
+}
+
+.caption {
+    font-style: italic;
+    font-size: var(--f-cap);
+    padding: var(--cap-mar) 0 var(--cap-mar-bottom);
+}
+
+p.body-S1 {
+    list-style: none;
+    padding: 0;
+    /* negative indent and mar */
+    text-indent: var(--s1-ind);
+    margin-left: var(--s1ind);
+    font-size: var( --f-body);
+}
+
+p.body-S1:first-line {
+    text-indent: 0;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-size: var( --f-body);
+}
+
+li {
+    text-indent: var(--s1ind);
+}
+
+p.body-S2 {
+    margin-left: var(--s1ind);
+    font-size: var( --f-body);
+}
+
+ul.references {
+    column-count: 2;
+    font-size: var( --f-cap);
+}
+
+.references li {
+    text-indent: var(--ref-ind);
+    /* negative indent and mar */
+    margin-left: var(--refind);
+    font-size: var( --f-body);
+    font-style: italic;
+}
+
+#image-credits li {
+    text-indent: var(--imc-ind);
+    /* negative indent and mar */
+    margin-left: var(--imcind);
+    font-size: var( --f-body);
+    font-style: italic;
+}
+
+.references li:first-line {
+    text-indent: 0;
+}
+
+h4 {
+    font-size: var(--f-cap);
+    font-weight: inherit;
+    font-style: italic;
+}
+
+.italic {
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+}
+
+label,
+input,
+h1,
+h2,
+h3,
+h4,
+a,
+p {
+    padding: 0;
+    margin: 0;
+}
+
+@media only screen and (min-width: 992px) {
+    /* GLOBAL DECLARIATION + VARIABLE */
+    * {
+        box-sizing: border-box;
+    }
+     :root {
+        /* COLORS */
+        /* FONT */
+        font-size: 1em;
+        /* body */
+        --f-body: 1.0em;
+        /* titles */
+        --f-big: 1.4em;
+        --f-icon: 2.3em;
+        --f-cap: .8em;
+        /* MARGINS */
+        --body-mar: 12px;
+        /* --body-mar: 20px;  */
+        --body-mar-side: 6px;
+        --col-side-mar: 6px;
+        /* --col-side-mar: 14px; */
+        --img-mar: 0px;
+        --header-mar: 25px;
+        --header-mar-top: 16px;
+        --footer-mar-top: 10px;
+        --footer-p-top: 12px;
+        --cap-mar: 0px;
+        --cap-mar-bottom: 36px;
+        --p-mar: 12px;
+        /* INDENT */
+        --s1-ind: -25px;
+        --s1ind: 25px;
+        --imcind: 36px;
+        --imc-ind: -36px;
+    }
+    /* TEXTS STYLES  */
+    /* .p-title {
+        font-size: var( --f-body);
+        font-weight: inherit;
+    }
+    .p-title-small {
+        font-size: var( --f-body);
+        font-weight: inherit;
+        font-style: italic;
+    }
+    .nav {
+        color: var(--blue);
+        font-size: var( --f-body);
+    } */
+    /* .hyperlink {
+        color: var(--blue);
+        text-decoration: none;
+    } */
+    /* .hyperlink::before {
+        content: "→";
+    } */
+    /* .caption {
+        font-style: italic;
+        font-size: var(--f-cap);
+        padding: var(--cap-mar) 0 var(--cap-mar-bottom);
+    } */
+    .p-header .body-S1,
+    .p-header .body-S2 {
+        font-size: var(--f-big);
+    }
+    p.body-S1 {
+        list-style: none;
+        padding: 0;
+        /* negative indent and mar */
+        text-indent: var(--s1-ind);
+        margin-left: var(--s1ind);
+        font-size: var( --f-body);
+    }
+    p.body-S1:first-line {
+        text-indent: 0;
+    }
+    ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        font-size: var( --f-body);
+    }
+    li {
+        text-indent: var(--s1ind);
+    }
+    p.body-S2 {
+        margin-left: var(--s1ind);
+        font-size: var( --f-body);
+    }
+    .italic {
+        font-family: 'Times New Roman', Times, serif;
+        font-style: italic;
+    }
+    label,
+    input,
+    h1,
+    h2,
+    h3,
+    h4,
+    a,
+    p {
+        padding: 0;
+        margin: 0;
+    }
+}
